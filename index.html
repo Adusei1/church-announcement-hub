@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Church Info & Announcements Hub</title>
+    <!-- Google Font for clean typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* RESET & BASE STYLES */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background-color: #f9fafb;
+            color: #1f2937;
+            padding-bottom: 60px;
+        }
+
+        /* HERO HEADER SECTION */
+        .hero {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+            margin-bottom: 30px;
+        }
+
+        .hero h1 {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .hero p {
+            font-size: 15px;
+            color: #bfdbfe;
+        }
+
+        /* CONTAINER FOR CONTENT */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* SECTION HEADER STYLES */
+        .section-title {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #111827;
+            border-left: 4px solid #3b82f6;
+            padding-left: 10px;
+        }
+
+        /* LIVE STREAM LINK CONTAINER */
+        .links-container {
+            margin-bottom: 35px;
+        }
+
+        .quick-link-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #ef4444;
+            color: white;
+            text-decoration: none;
+            padding: 16px;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 16px;
+            box-shadow: 0 4px 6px -1px rgba(239, 68, 68, 0.2);
+            transition: all 0.2s;
+            text-align: center;
+            max-width: 300px;
+            margin: 0 auto;
+        }
+
+        .quick-link-btn:hover {
+            background: #dc2626;
+            transform: translateY(-2px);
+        }
+
+        /* ANNOUNCEMENTS LIST AND CARDS */
+        .announcements-list {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+            border: 1px solid #e5e7eb;
+            transition: transform 0.2s;
+        }
+
+        .card:hover {
+            transform: scale(1.005);
+        }
+
+        .card-tag {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 600;
+            text-transform: uppercase;
+            padding: 4px 8px;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+
+        .tag-current { background: #dbeafe; color: #1e40af; }
+        .tag-archive { background: #f3f4f6; color: #4b5563; }
+
+        .card-title {
+            font-size: 17px;
+            font-weight: 600;
+            color: #111827;
+            margin-bottom: 6px;
+        }
+
+        .card-time {
+            font-size: 13px;
+            color: #6b7280;
+            margin-bottom: 12px;
+        }
+
+        .card-body {
+            font-size: 14px;
+            color: #4b5563;
+            line-height: 1.5;
+        }
+
+        /* ARCHIVE LINE SEPARATOR */
+        .archive-separator {
+            margin: 45px 0 30px 0;
+            border: 0;
+            border-top: 1px dashed #d1d5db;
+        }
+
+        /* PAST ARCHIVE GRAPHICS ADJUSTMENT */
+        .archive-section .section-title {
+            border-left-color: #9ca3af;
+            color: #4b5563;
+        }
+
+        .archive-section .card {
+            background: #fafafa;
+            opacity: 0.85;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HERO HEADER -->
+    <div class="hero">
+        <h1>AMANFROM ENGLISH ASSEMBLY</h1>
+        <p>Your centralized space for weekly activities and resources</p>
+    </div>
+
+    <div class="container">
+        
+        <!-- QUICK RESOURCES LINKS -->
+        <div class="links-container">
+            <a href="https://www.facebook.com/share/v/16tTwWDkaL/" target="_blank" class="quick-link-btn">🔴 Watch Live Stream</a>
+        </div>
+
+        <!-- 1. CURRENT ANNOUNCEMENTS SECTION -->
+        <h2 class="section-title">This Week's Announcements</h2>
+        <div class="announcements-list">
+            
+            <!-- CURRENT: MEN'S MINISTRY WEEK -->
+            <div class="card">
+                <span class="card-tag tag-current">Upcoming Notice</span>
+                <h2 class="card-title">Men's Ministry National Week Celebrations</h2>
+                <div class="card-time">📅 Launching Sunday, June 7th to June 14th</div>
+                <p class="card-body">Calling all men! Our annual Men's Week celebration begins soon. Get ready for an impactful week of practical seminars, health screenings, sports fellowship, and a powerful thanksgiving climax. Ensure you pick up your anniversary fabric from the stewards.</p>
+                <h2 class="card-title">Children Ministry National Week Celebrations</h2>
+                <div class="card-time">📅 Launching Sunday, June 7th to June 14th</div>
+            </div>
+
+        </div>
+
+        <!-- LINE SEPARATOR TO SPLIT CURRENT FROM PAST -->
+        <hr class="archive-separator">
+
+        <!-- 2. PAST ARCHIVED ANNOUNCEMENTS SECTION -->
+        <div class="archive-section">
+            <h2 class="section-title">Past Announcements Archive</h2>
+            <div class="announcements-list">
+                
+                <!-- ARCHIVED: PENTECOST WEEK CELEBRATION -->
+                <div class="card">
+                    <span class="card-tag tag-archive">Archived (Past Event)</span>
+                    <h2 class="card-title">Pentecost Week Celebration</h2>
+                    <div class="card-time">📅 Concluded Service</div>
+                    <p class="card-body"><strong>Topic Focus:</strong> Living a Holy Life.<br>We want to thank the entire congregation for a spiritually uplifting Pentecost week celebration. Let us continue to walk daily in accordance with the Word and maintain a life of holiness.</p>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
